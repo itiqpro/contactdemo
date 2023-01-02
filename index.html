@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Contact Us</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+</head>
+
+<body>
+  <!-- Start your project here-->
+  <div class="container mt-5" style="width:720px;">
+    <h2>Contact Us</h2>
+
+    <form id="contact" action="api/contact" method="post" enctype="application/x-www-form-urlencoded">
+      <!-- Name input -->
+      <div class="form-outline mb-4">
+        <input type="text" id="fldName" name="fldName" class="form-control" />
+        <label class="form-label" for="fldName">Name</label>
+      </div>
+
+      <!-- Email input -->
+      <div class="form-outline mb-4">
+        <input type="email" id="fldEmailAddr" name="fldEmailAddr" class="form-control" />
+        <label class="form-label" for="fldEmailAddr">Email address</label>
+      </div>
+
+      <!-- Message input -->
+      <div class="form-outline mb-4">
+        <textarea class="form-control" id="fldMessage" name="fldMessage" rows="4"></textarea>
+        <label class="form-label" for="fldMessage">Message</label>
+      </div>
+
+      <!-- Checkbox -->
+      <div class="form-check d-flex justify-content-right mb-4">
+        <input class="form-check-input me-2" type="checkbox" value="" id="fldCC" name="fldCC" checked />
+        <label class="form-check-label" for="fldCC">
+          Send me a copy of this message
+        </label>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-primary mb-4">Send</button>
+    </form>
+
+  </div>
+  <!-- End your project here-->
+
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript"></script>
+</body>
+
+</html>
